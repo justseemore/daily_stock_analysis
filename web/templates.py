@@ -728,7 +728,7 @@ def render_config_page(
         if (status === 'completed') {
             detailHtml = '<div class="task-detail" id="detail_' + taskId + '">' +
                 '<div class="task-detail-row"><span class="label">趋势</span><span>' + (result.trend_prediction || '-') + '</span></div>' +
-                (result.analysis_summary ? '<div class="task-detail-summary">' + result.analysis_summary.substring(0, 100) + '...</div>' : '') +
+                (result.analysis_summary ? '<div class="task-detail-summary">' + result.analysis_summary + '</div>' : '') +
                 '</div>';
         }
         
